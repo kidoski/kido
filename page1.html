@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Profil</title>
+
+    <!-- Lien vers Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Animation pour le texte défilant */
+        @keyframes scrollText {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .scrolling-text {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scrollText 15s linear infinite;
+            font-size: 24px;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        /* Style des cartes */
+        .card {
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Amélioration de la lisibilité du texte */
+        .lead {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        /* Images arrondies */
+        .img-fluid {
+            border-radius: 8px;
+        }
+
+        /* Textes stylés */
+        h1, h3, p {
+            color: #333;
+        }
+
+        .section-title {
+            color: #007bff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Container principal avec Bootstrap -->
+    <div class="container py-5">
+
+        <!-- En-tête avec les images des logos alignées -->
+        <div class="row mb-4">
+            <div class="col-6">
+                <img src="pigier.jpg" alt="Logo Pigier" class="img-fluid" width="120" height="60"/>
+            </div>
+            <div class="col-6 text-end">
+                <img src="pigier.jpg" alt="Logo Pigier" class="img-fluid" width="120" height="60"/>
+            </div>
+        </div>
+
+        <!-- Texte défilant centré -->
+        <div class="text-center mb-5">
+            <h1><em><div class="scrolling-text">Bienvenue sur mon site</div></em></h1>
+        </div>
+
+        <!-- Section Etat Civil -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="section-title"><b>I - Etat Civil</b></h2>
+                <p><b>Nom :</b> KIDONNIN</p>
+                <p><b>Prénoms :</b> Oscar</p>
+                <p><b>Filière :</b> RGL-2</p>
+                <img src="Oscar.jpg" alt="Photo Oscar" class="img-fluid mb-3 w-50" height="150" />
+
+            </div>
+        </div>
+
+        <!-- Section Diplômes -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="section-title"><b>II - Mes Diplômes</b></h2>
+                <ul>
+                    <li><b>CEP</b></li>
+                    <li><b>BEPC</b></li>
+                    <li><b>BAC</b></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section Description -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="section-title"><b>III - Ma Description</b></h2>
+                <p class="lead">
+                    <q>Je suis un étudiant de 20 ans passionné par l'informatique, spécialisé en réseaux et génie logiciel. J'ai acquis des compétences solides dans l'administration des réseaux, la gestion de la sécurité des systèmes, ainsi que le développement de logiciels et d'applications web. Mon objectif est de combiner mes connaissances en programmation et en infrastructure réseau pour contribuer à des projets innovants et répondre aux défis technologiques de demain. Curieux, autonome et à l'aise en travail d'équipe, je participe régulièrement à des projets open-source et je suis toujours à l’affût des nouvelles tendances en matière de technologies. Je suis une personne énergique et pleine d'ambition. À 20 ans, je suis en train de me découvrir et de m'adapter à la vie universitaire. Je n'hésite pas à participer en classe et à poser des questions. Je suis sociable, apprécie les discussions entre amis et je suis toujours prêt à découvrir de nouvelles idées ou expériences. Cependant, je peux parfois manquer d'organisation et de discipline. J'aime beaucoup les jeux vidéo et le football.</q>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Lien vers Bootstrap JS pour les fonctionnalités dynamiques -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
